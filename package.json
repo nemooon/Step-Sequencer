@@ -1,0 +1,67 @@
+{
+  "private": true,
+  "name": "step-sequencer",
+  "scripts": {
+    "dev": "run-p webpack:watch browser-sync",
+    "browser-sync": "browser-sync start --config bs-config.js",
+    "webpack": "cross-env NODE_ENV=development webpack -d",
+    "webpack:watch": "cross-env NODE_ENV=development webpack --progress --colors --watch -d",
+    "webpack:development": "cross-env NODE_ENV=development webpack -d",
+    "webpack:production": "cross-env NODE_ENV=production webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemooon/Step-Sequencer.git"
+  },
+  "author": "nemooon",
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "bootstrap": "^4.0.0-alpha.4",
+    "classnames": "^2.2.5",
+    "csshake": "^1.5.0",
+    "font-awesome": "^4.6.3",
+    "history": "^4.0.1",
+    "js-polyfills": "^0.1.22",
+    "moment": "^2.15.0",
+    "numeral": "^1.5.3",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-fa": "^4.1.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-inspector": "^0.8.0",
+    "redux-localstorage": "^0.4.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "buffer-loader": "0.0.1",
+    "cross-env": "^2.0.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.10.0",
+    "npm-run-all": "^3.1.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  }
+}

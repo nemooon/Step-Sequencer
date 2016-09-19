@@ -1,0 +1,32 @@
+
+.list {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100% !important;
+
+  // background: #fff;
+}
+
+.list > .list-navi {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 44px;
+}
+
+.list > .list-navi-v {
+  flex-basis: 88px;
+}
+
+.list > .list-table {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+@import "navi";
+@import "table";

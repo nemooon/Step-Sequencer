@@ -1,0 +1,43 @@
+
+@import "variable";
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-frame {
+  display: flex;
+  flex-grow: 1;
+
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-grow: 1;
+
+  width: 100%;
+}
+
+.app-content {
+  display: flex;
+  flex-grow: 1;
+
+  width: 100%;
+  background-color: $body-bg;
+  z-index: 10;
+  overflow: auto;
+}
+
+.app-center {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+
+  overflow: auto;
+}
