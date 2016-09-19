@@ -2,6 +2,7 @@
   "private": true,
   "name": "step-sequencer",
   "scripts": {
+    "prod": "run-p webpack:production",
     "dev": "run-p webpack:watch browser-sync",
     "browser-sync": "browser-sync start --config bs-config.js",
     "webpack": "cross-env NODE_ENV=development webpack -d",

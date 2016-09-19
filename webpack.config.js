@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    slv: ["babel-polyfill", "./src/app.js"],
+    trss: ["babel-polyfill", "./src/app.js"],
   },
   output: {
     path: __dirname + "/dist/",
